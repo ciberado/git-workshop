@@ -38,6 +38,9 @@ q
 
 This exercise contains the solution hidden. We are going to use this format during the training: invest some time trying to solve the proposed problem, and ask for support to your trainer if you get lock. But, in case of desperation, you can always click on the little triangle on the left to get a tip or even the whole answer.
 
+Sometimes, the exercise will include a solution with a redacted portion to help you to
+to investigate the proper syntax command.
+
 We are going to practice with the `ed` command. Start by creating a file:
 
 ```bash
