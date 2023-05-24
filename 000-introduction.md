@@ -12,3 +12,21 @@ To get started, they'll need to set up a Git repository for the book. This will 
 sudo apt update
 sudo apt install -y git ed
 ```
+
+### About `ed`
+
+[ed](https://www.cheat-sheets.org/project/tldr/command/ed/) is the original Unix editor. It is a sophisticated piece of software that will help us to manipulate text files in a precise way.
+
+It can be used both programatically and with an interactive shell, but mostly we will take advantage of its automation characteristics to update the content of the book.
+
+For example, this script will insert a message in the line number two of the `example.txt` file, `w`rite the updated file on disk and `q`uit from `ed`:
+
+```bash
+ed example.txt << EOF
+2i
+
+This text will be inserted on line two.
+.
+w
+q
+```
