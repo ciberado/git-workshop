@@ -1,4 +1,19 @@
-## Alice: first commits
+# Alice: first commits
+
+## Concepts and commands
+
+- [x] `status`
+- [x] `add`
+- [x] Changeset
+- [x] Revision
+- [x] SHA-1
+- [x] `commit`
+- [x] `log`
+- [x] HEAD, HEAD~, HEAD~~, HEAD~2
+- [x] Show specific revisions of a file
+- [x] Get the changesets applied between two revisions of a file
+
+## Lab
 
 * Our author wants to take a look at the current state of her repo:
 
@@ -37,12 +52,24 @@ cat .git/HEAD
 cat .git/refs/heads/main     # Whole sha-1 HEAD
 ```
 
-* Actually, there are several ways to store this information. So in case
-automation is required, the proper command to retrieve the current `commit` revision is
+<details>
+<summary>
+Actually, there are several ways to store this information. What would
+be the best way to programmatically retrieve the SHA-1 of the current
+revision?
+
+```bash
+git rev-p████ HEAD
+```
+</summary>
+
+#### Solution
 
 ```bash
 git rev-parse HEAD
 ```
+
+</details>
 
 * Now Alice can safely apply the new paragraph to the text, without any fear
 to lose the content of the previous version:
@@ -122,6 +149,26 @@ git show $PREV_REVISION:chapter-01.md
 git show HEAD~:chapter-01.md
 ```
 
-### Questions
+<details>
+
+<summary>
+Umh... ok... and how can Alice see the differences between the current version of the chapter and the originally commited one (two revisions ago)? 
+
+
+```bash
+git d███ HEAD~ chapter-01.md
+```
+</summary>
+
+#### Solution
+
+```bash
+git diff HEAD~ chapter-01.md
+```
+
+</details>
+
+## Questions
 
 * What does it mean that a set of files are *untracked*?
+* Which command would allow you to access the version of `chapter-01.md` stored **two** revisions ago?
