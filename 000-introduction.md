@@ -41,6 +41,8 @@ This exercise contains the solution hidden. We are going to use this format duri
 Sometimes, the exercise will include a solution with a redacted portion to help you to
 to investigate the proper syntax command.
 
+Now that we are familiar with the format, **let's solve our first challenge**:
+
 We are going to practice with the `ed` command. Start by creating a file:
 
 ```bash
