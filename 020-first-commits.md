@@ -2,6 +2,8 @@
 
 ## Concepts and commands
 
+- [x] Working zone
+- [x] Index/staging area
 - [x] `status`
 - [x] `add`
 - [x] Changeset
