@@ -19,8 +19,13 @@ As the waves tossed him around, Tim struggled to stay afloat. Just when he thoug
 
 From that day forward, Tim's love for the ocean only grew stronger. But he never forgot the lesson he had learned - that sometimes, even the strongest of us need help from others to make it through the rough waters of life.
 EOF
+```
 
+* Review the magnificent piece of art that Alice has written:
+
+```bash
 ls
+cat chapter-01.md
 ```
 
 * Alice wants to enhance the description of the protagonist, but she is afraid of not being satisfied with the result. Because of that, she decides to work on a copy of the original content:
@@ -35,7 +40,11 @@ Tim is a lean and athletic young man with short brown hair and piercing blue eye
 w
 q
 EOF
+```
 
+* Let's check the current content of the disk:
+
+```bash
 ls
 cat chapter-01v2.md
 ```
@@ -51,6 +60,11 @@ rm chapter-01v2.md
 ```bash
 git config --global init.defaultBranch main
 git init
+```
+
+* The database used by `git` is stored in the `.git` subdirectory of the managed project:
+
+```
 ls -a
 ls .git
 ```
@@ -60,7 +74,16 @@ ls .git
 ```bash
 git config user.name Alice
 git config user.email alice@example.com
-git config --list
+```
 
+* She wants to check if the configuration has been correctly saved:
+
+```bash
+git config --list
+```
+
+* The `config --list` command is just a convenient way of checking the configuration file in the database:
+
+```bash
 cat .git/config
 ```
