@@ -72,6 +72,7 @@ EOF
 
 </summary>
 
+---
 #### Solution:
 
 ```bash
@@ -85,6 +86,5 @@ EOF
 
 cat myfile.txt
 ```
-
-
+---
 </details>

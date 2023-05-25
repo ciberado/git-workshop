@@ -65,12 +65,13 @@ git rev-p████ HEAD
 ```
 </summary>
 
+---
 #### Solution
 
 ```bash
 git rev-parse HEAD
 ```
-
+---
 </details>
 
 * Now Alice can safely apply the new paragraph to the text, without any fear
@@ -162,12 +163,13 @@ git d███ HEAD~ chapter-01.md
 ```
 </summary>
 
+---
 #### Solution
 
 ```bash
 git diff HEAD~ chapter-01.md
 ```
-
+---
 </details>
 
 ## Questions
