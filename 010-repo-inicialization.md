@@ -1,4 +1,11 @@
-## Alice: repo initialization
+# Alice: repo initialization
+
+## Concepts and commands
+
+- [x] Repo
+- [x] Configuration
+
+## Lab
 
 * Alice is going to create his own workspace:
 
