@@ -50,12 +50,13 @@ cat .git/refs/heads/vocabulary-chapter-01  # It contains the same value than mai
 cat .git/refs/heads/main
 ```
 
-* Alice will replace one of the appearance of the word *beach* with the much more beautiful *shore*
+* Alice will replace one of the appearance of the word *beach* with the much more beautiful *sand*
 
 ```bash
 cat chapter-01.md | grep beach
-sed -z -i 's/beach/shore/2' chapter-01.md
-cat chapter-01.md | grep -e shore -e beach
+sed -z -i 's/beach/sand/2' chapter-01.md
+sed -z -i 's/shore/border/2' chapter-01.md
+cat chapter-01.md | grep -e sand -e beach -e shore -e border
 git add chapter-01.md
 git commit -m "Replacing repetitive words"
 git log
@@ -65,7 +66,7 @@ git log
 
 ```bash
 git checkout main
-cat chapter-01.md | grep -e shore -e beach # No shore, here
+cat chapter-01.md | grep -e sand -e beach # No sand, here
 git log
 ```
 
