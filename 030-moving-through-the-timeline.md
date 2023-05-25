@@ -5,6 +5,7 @@
 
 * [x] Moving the *HEAD* pointer
 * [x] Detached *HEAD* state
+* [x] `rev-parse`
 
 ## Lab
 
@@ -41,11 +42,13 @@ git diff HEAD█:chapter-01.md chapter-01.md
 
 </summary>
 
+---
 #### Solution
 
 ```bash
 git diff HEAD~:chapter-01.md chapter-01.md
 ```
+---
 </details>
 
 After comparing the two version, Alice thinks that maybe it would be more interesting to leave the description of Tim to the imagination of the reader, so he goes back in time to the previous revision
@@ -69,6 +72,7 @@ git c███████ $PREV_REVISION  # Move the value of the HEAD ref
 ```
 </summary>
 
+---
 #### Solution
 
 ```bash
@@ -76,6 +80,7 @@ git rev-parse HEAD~
 PREV_REVISION=$(git rev-parse HEAD~)
 git checkout $PREV_REVISION
 ```
+---
 </details>
 
 * Wait... what does it means with *detached HEAD state*? Alice compares the current HEAD value with the one stored in *main*, to check how the first one is not pointing to the second anymore
@@ -95,12 +100,14 @@ cat chapter-01.md
 ```
 </summary>
 
+---
 #### Solution
 
 ```bash
 git log
 cat chapter-01.md
 ```
+---
 </details>
 
 <details>
@@ -115,6 +122,7 @@ cat .git/HEAD
 ```
 </summary>
 
+---
 #### Solution
 
 ```bash
@@ -123,7 +131,7 @@ git log
 cat chapter-01.md
 cat .git/HEAD
 ```
-
+---
 </details>
 
 ## Questions
