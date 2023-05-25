@@ -112,7 +112,7 @@ cat chapter-01.md
 
 <details>
 <summary>
-Nah, Alice decides that it was not a good idea: Tim  has to have a particular appearance for this story to work. So Alice reverses the time traveling moving *HEAD* to the end of the line:
+Nah, Alice decides that it was not a good idea: Tim  has to have a particular appearance for this story to work. So Alice reverses the time traveling moving *HEAD* to the end of the line, but just for the fun she will not use the `checkout` command to do it, but an equivalent:
 
 ```bash
 git sw████ -
