@@ -55,7 +55,6 @@ cat .git/refs/heads/main
 ```bash
 cat chapter-01.md | grep beach
 sed -z -i 's/beach/sand/2' chapter-01.md
-sed -z -i 's/shore/border/2' chapter-01.md
 cat chapter-01.md | grep -e sand -e beach -e shore -e border
 git add chapter-01.md
 git commit -m "Replacing repetitive words"
