@@ -49,18 +49,32 @@ git merge vocabulary-chapter-01 -m "Merged vocabulary"
 git log
 ```
 
-* Time passes, it is more and more convenient to simplify the output of the log:
+* As time passes and we keep adding commits to the history, it is more 
+and more convenient to simplify the output of the log
 
 ```bash
 git log --oneline
 ```
 
+<details>
+<summary>
 * And once we start to merging different branches, it is always nice to be able
-to actually see the different timelines of our project visually:
+to see the different timelines of our project visually:
 
 ```bash
-git log --graph --decorate --oneline
+git log --oneline --gr███
 ```
+</summary>
+
+---
+#### Solution
+
+```bash
+git log --oneline --graph
+```
+
+---
+</details>
 
 
 
