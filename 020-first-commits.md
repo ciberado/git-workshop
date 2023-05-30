@@ -1,5 +1,8 @@
 # Alice: first commits
 
+Now that Alice has a proper git repository in place, she can take advantage
+of it to start developing her novel.
+
 ## Concepts and commands
 
 - [x] Working zone

@@ -1,13 +1,13 @@
 # Alice: merging without conflicts
 
+Alice knows that branches must be integrated often to avoid problems, 
+so she will *merge* the vocabulary branch with the main one.
+
 ## Concepts and commands
 
 - [x] Branch merging
 
 ## Lab
-
-Alice knows that branches must be integrated often to avoid problems, 
-so she *merges* the vocabulary branch with the main one
 
 * First, she checks that she is in the `main` branch
 

@@ -1,5 +1,9 @@
 # Alice: repo initialization
 
+Our writer switches on the old computer with the intention of setting up
+everything to write the story in collaboration with Bob. The first step
+will be to initialize the git database.
+
 ## Concepts and commands
 
 - [x] Repo
