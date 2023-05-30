@@ -138,7 +138,7 @@ EOF
 * Yes, she has it:
 
 ```bash
-cat chapter-01.md | grep -e "lighthouse keeper" -e "floundering" - C 9999
+cat chapter-01.md | grep -e "lighthouse keeper" -e "floundering" -C 9999
 ```
 
 * Time to commit the chapter:
