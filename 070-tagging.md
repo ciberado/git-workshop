@@ -4,6 +4,7 @@
 
 - [x] `tag`
 - [x] Lightweight tags
+- [x] Annotated tags
 
 ## Lab
 
@@ -64,20 +65,39 @@ cat .git/refs/tags/v1
 cat .git/refs/heads/main  # points to the same object than the tag
 ```
 
-* Ouch: Alice realizes that she used a **lightweight tag**, but she would like to set a comment. 
-So she deletes the tag an creates an annotated one
+<details>
+<summary>
+Ouch: Alice realizes that she used a **lightweight tag**, but she would like to set a comment. 
+So she deletes the previously created tag:
+
+```bash
+git tag -█ v1
+```
+</summary>
+
+---
+#### Solution
 
 ```bash
 git tag -d v1
+```
+---
+</details>
+
+* The tag reference has disappeared, and the directory is empty:
+
+```bash
 ls .git/refs/tags
 ```
 
 <details>
 <summary>
-To create an *annotated tag*, Alice needs some extra flags to the `tag` command:
+Alice wants to explain why this particular commit is important, and to be able
+to append a comment to a tag, she needs to an *annotated* one. So whe will use
+some extra flags with the `tag` command:
 
 ```bash
-git ███ -█ v1 -m "First chapter is ready to be reviewed!"
+git tag -█ v1 -m "First chapter is ready to be reviewed!"
 ```
 </summary>
 
