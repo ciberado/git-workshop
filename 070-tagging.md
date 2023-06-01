@@ -26,11 +26,23 @@ git log --graph --oneline --decorate \
   | grep vocabulary-chapter-01 -C 9999
 ```
 
-* Finally, Alice marks the commit pointed by *HEAD* as the first version of the book with a tag
+<details>
+<summary>
+Finally, Alice marks the commit pointed by *HEAD* as the first version of the book with a tag
+
+```bash
+git ███ v1
+```
+</summary>
+
+---
+#### Solution
 
 ```bash
 git tag v1
 ```
+---
+</details>
 
 * This fact is reflected in the log:
 
@@ -60,11 +72,23 @@ git tag -d v1
 ls .git/refs/tags
 ```
 
-* To create an *annotated tag*, Alice needs some extra flags to the `tag` command:
+<details>
+<summary>
+To create an *annotated tag*, Alice needs some extra flags to the `tag` command:
+
+```bash
+git ███ -█ v1 -m "First chapter is ready to be reviewed!"
+```
+</summary>
+
+---
+#### Solution
 
 ```bash
 git tag -a v1 -m "First chapter is ready to be reviewed!"
 ```
+---
+</details>
 
 * The newly created tag is actually a full object in the repository, so the value
 of the reference doesn't point to the HEAD commit anymore:
