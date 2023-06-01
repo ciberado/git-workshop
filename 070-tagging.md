@@ -13,7 +13,7 @@ the first chapter (at least for now), so she proceeds to delete the branch
 
 ```bash
 git log --graph --oneline --decorate \
-  | grep vocabulary-chapter-01 -C 9999
+  | grep "Replaced struggling and shore." -C 9999
 git branch -d vocabulary-chapter-01
 git branch
 ```
@@ -23,7 +23,7 @@ branch doesn't exists anymore:
 
 ```bash
 git log --graph --oneline --decorate \
-  | grep vocabulary-chapter-01 -C 9999
+  | grep "Replaced struggling and shore." -C 9999
 ```
 
 <details>
