@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 Alice and Bob are writers who are collaborating on a new book. They've decided to use Git as their tool for collaborative edition, and a very ancient computer with a [model M keyboard](https://en.wikipedia.org/wiki/Model_M_keyboard) attached to it.
 
