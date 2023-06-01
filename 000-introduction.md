@@ -13,7 +13,7 @@ sudo apt update
 sudo apt install -y git ed
 ```
 
-### About `ed`
+## About `ed`
 
 [ed](https://www.cheat-sheets.org/project/tldr/command/ed/) is the original Unix editor. It is a sophisticated piece of software that will help us to manipulate text files in a precise way.
 
@@ -30,7 +30,7 @@ w
 q
 ```
 
-### Exercise
+## Exercise
 
 <details>
 <summary>
