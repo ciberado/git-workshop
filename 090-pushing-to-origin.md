@@ -1,6 +1,13 @@
-## Bob: pushing to origin
+# Bob: pushing to origin
 
-* And, imbued with the creativity provided by a good cup of coffee, Bob writes his part of the book and commits the changes **on his own repository**
+## Concepts and commands
+
+- [x] Remote merging
+- [x] `push`
+
+## Lab
+
+* Imbued with the creativity provided by a good cup of coffee, Bob writes his part of the book and commits the changes **on his own repository**
 
 ```bash
 cat << EOF > chapter-02.md
@@ -12,63 +19,53 @@ Tim nodded, his heart still racing. He realized that he had underestimated the p
 
 As they made their way back to the shore, the lighthouse keeper introduced himself as John, and they struck up a conversation. Tim learned that John had spent his life guiding ships safely through the treacherous waters of the coast. He was now enjoying his retirement in the nearby town, where he relished fishing and spending time with his grandchildren.
 
-As they said their goodbyes, John turned to Tim with a twinkle in his eye. "Have you ever heard of the mermaids?" he asked, his voice filled with mystery
+As they said their goodbyes, John turned to Tim with a twinkle in his eye. "Have you ever heard of the mermaids?" he asked, his voice filled with mystery.
 EOF
 
 ls
 git add chapter-02.md
+git status
 git commit -m "Added chapter 2."
 git log --oneline
 ```
 
-* Satisfied with his masterpiece, he tries to synchronize his repository with the one owned by Alice
+* Satisfied with his masterpiece, he will try to synchronize his repository with the one owned by Alice. First,
+he will check that everything is in place again
 
 ```bash
 git status             # Branch ahead of origin/main
-git push origin main   # Error! This action would mess with Alice's content
 ```
 
-* Oh, ok: looks like `git` refuses to mess up with the current working copy of Alice's repository. So Bob creates a new branch and runs the `push` command again
+* Now he tries to update Alice's main branch with his own... but something goes wrong:
+
+```bsh
+git push origin main  # Error
+```
+
+* Oh, ok: `git`has detected that Alice is also working in her copy of the main branch, and messing with it
+could be result in a very confusing situation for her. So the operation has failed. Bobs understands the
+situation, and to solve it creates a different branch:
 
 ```bash
 git checkout -b wip-chapter-02
+```
+
+* Now he can safely push his content, as it will appear just as another branch in Alice's repo
+
+```
 git status
 git push origin wip-chapter-02
 ```
 
-* Finally, he closes his workspace
+* Everything looks fine, but let's just check it:
 
+```bash
+git log --oneline --decorate 
+  | grep origin/wip-chapter-02 -C 9999
+```
+
+* All good, so he closes his workspace
+  
 ```bash
 cd ../../
 ```
-
-**Checkpoint snap07!**
-
-## Alice: merging (from the branch created by Bob's push)
-
-* Our preferred writer is back, and having read Bob's message she decides to merge his work
-
-```bash
-cd alice/book
-git status
-ls
-git branch
-git merge wip-chapter-02
-ls
-git log --graph --oneline
-```
-
-* Alice don't want to get her repo populated by many branches created by Bob, so she deletes the new one
-
-```bash
-git branch -d wip-chapter-02
-git branch
-```
-
-* She decides it will be easier if their respective repositories don't interact directly between each other, so she leaves her workspace to create a solution to this problem
-
-```bash
-cd ../../
-```
-
-**Checkpoint snap08!**
