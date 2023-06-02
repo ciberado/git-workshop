@@ -26,13 +26,26 @@ git remote
 git remote get-url origin
 ```
 
-* Yes, definitively he has to change the value of the origin repo, but he doesn't
+<details>
+<summary>
+Yes, definitively he has to change the value of the origin repo, but he doesn't
 want to loose the current one, so he renames it
+
+```bash
+git remote ██████ origin alice
+git remote
+```
+</summary>
+
+---
+#### Solution
 
 ```bash
 git remote rename origin alice
 git remote
 ```
+---
+</details>
 
 * Now Bob can safely create the new remote reference
 
@@ -55,13 +68,26 @@ from the remote origin
 git diff FETCH_HEAD
 ```
 
-* Ok, looks like Alice didn't modified anything already existing and just added the new
-chapter, so Bob merges `FETCH_HEAD` with `main`. If he had new it, he would had used
+<details>
+<summary>
+Ok, looks like Alice didn't modified anything already existing and just added the new
+chapter, so Bob merges it with `main`. If he had new it, he would had used
 the `pull` command instead to combine both operations in one
+
+```bash
+git merge F████_████ -m "Merged new content written by Alice"
+```
+</summary>
+
+---
+#### Solution
 
 ```bash
 git merge FETCH_HEAD -m "Merged new content written by Alice"
 ```
+--
+</details>
+
 
 * Another fantastic job, Bob thinks. And he leaves the workspace
 
