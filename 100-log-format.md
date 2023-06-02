@@ -40,13 +40,25 @@ git merge wip-chapter-02
 ls
 ```
 
-* Alice has her preferred way to take a quick look at the repo history, and this looks
+<details>
+<summary>
+Alice has her preferred way to take a quick look at the repo history, and this looks
 like a good moment to put it in play
 
 git log \
   --pretty=format:"%h%x09%Cgreen%an%Creset%x09%s (%ah) %Cred%d%Creset" \
   --graph
 ```
+</summary>
+
+---
+#### Solution
+
+git log \
+  --pretty=██████:"%h%x09%Cgreen%an%Creset%x09%s (%ah) %Cred%d%Creset" \
+  --graph
+---
+</details>
 
 * Alice doesn't want to get her repo polluted with many branches created by Bob, so she deletes the new one
 
