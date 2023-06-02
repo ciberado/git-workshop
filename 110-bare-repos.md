@@ -1,25 +1,57 @@
-## Alice: centralized repository creation
+# Alice: centralized repository creation
 
-* Alice is going to create a repository intended to have only the data, without any working directory. This way, both Alice and Bob will be able to work against a common *integration branch*. By convention, bare repos ends with `.git`:
+Alice is going to create a repository intended to have only the data, without any working directory. This way, both Alice and Bob will be able to work against a common *integration branch*. 
+
+## Concepts and commands
+
+- [x] Bare repositories
+- [x] `--bare`
+
+## Lab
+
+* First, Alice goes to the top directory to create the folder for the new repo. By convention, a
+bare repos directory name ends with `.git`:
 
 ```bash
+cd
 mkdir central.git
+```
+
+* Jumping inside the newly created directory, our Writer is able to initialize it properly
+
+```bash
 cd central.git
-git init --bare --shared
+git init --bare
+```
+
+* Here it is the interesting part: the new repository only contains the database, without
+a working directory
+
+```bash
 ls
 ```
 
-* Our main writer will need to synchronize the content of both repositories, from his own content
+* Now Alice can go back to her own repo and configure a remote reference to the bare one
 
 ```bash
 cd ../alice/book
 git status
 git remote add origin ../../central.git/
-git push origin main   # No problem, as it is a barebone repo
-git push origin v1     # Annotated tags are usually pushed, too
 ```
 
-### Alice: preparing new content
+* As the *origin* repo doesn't have a working directory, there is no problem in
+running a `push` command to execute a *remote merge* directly against the main branch
+
+```bash
+git push origin main
+```
+
+* Remote annotations usually are attached to versions of the repo that are significant
+and should be share, so Alice also decides to push `v1` into the central repo
+
+```bash
+git push origin v1
+```
 
 * Happy to see how everything is under control, she writes a new chapter and synchronizes everything
 
@@ -44,46 +76,3 @@ git push origin main
 cd ../..
 ```
 
-**Checkpoint snap09!**
-
-### Bob: pulling
-
-* Bob doesn't want to write today, but he is interested in reading what Alice has added to the story. First, he will check his own repository
-
-```bash
-cd bob/book
-git status
-git checkout main
-```
-
-* Now, he will update the configuration of the repository, setting his *origin* pointing to the centralized one
-
-```
-git remote
-git remote get-url origin
-git remote rename origin alice
-git remote add origin ../../central/
-git remote
-```
-
-* Not being completely sure of how to proceed, Bob wants to check the content of the central repo before merging it with its own
-
-```bash
-git fetch origin main    # Doesn't affect working tree
-git diff FETCH_HEAD      # Diff against the fetched data
-```
-
-* Ok, doesn't seems dangerous: a new file will note trigger a conflict, so Bob merges the content of the remote branch
-
-```bash
-git pull origin main     # Or git merge FETCH_HEAD
-git log --graph --decorate --online
-```
-
-* Another fantastic job, Bob thinks. And he leaves the workspace
-
-```bash
-cd ../..
-```
-
-**Checkpoint snap10!**
