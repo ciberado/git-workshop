@@ -127,12 +127,18 @@ cat chapter-04.md
 git log --oneline
 ```
 
-* Bob has learnt his lesson, and will use `git branch -d` instead of `git branch -D` for now on.
-Without losing more time, Bob merges it on main
+* Without losing more time, Bob merges it on main
 
 ```bash
 git checkout main
 git merge wip_resurrection -m "Integrated chapter 4"
+```
+
+* Bob has learnt his lesson, and will use `git branch -d` instead of `git branch -D` for now on,
+as the lowercase version refuses to delete anything that hasn't been merged
+
+```bash
+git branch -d wip_resurrection
 ```
 
 * Finally, he sends the update to the central server
