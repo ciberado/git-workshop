@@ -50,7 +50,7 @@ git remote
 * Now Bob can safely create the new remote reference
 
 ```bash
-git remote add origin ../../central/
+git remote add origin ../../central.git
 git remote
 ```
 
