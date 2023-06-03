@@ -140,3 +140,9 @@ git merge wip_resurrection -m "Integrated chapter 4"
 ```bash
 git push origin main
 ```
+
+* Bob understands he needs to take some fresh air before continuing, so he exits his directory
+
+```bash
+cd ../..
+```
