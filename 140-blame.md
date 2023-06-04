@@ -60,13 +60,26 @@ a typo in a sentence he doesn't remember to have introduced
 cat chapter-04.md | grep "the olt man's home" -C 999
 ```
 
-* Well... maybe he made a change in the text and doesn't remember it. Or not. He
+<details>
+<summary>
+Well... maybe he made a change in the text and doesn't remember it. Or not. He
 needs to know, so he asks `git` about who wrote each line of the book:
+
+```bash
+git █████ chapter-04.md \
+  | grep -e Alice -e Bob
+```
+</summary>
+
+---
+#### Solution
 
 ```bash
 git blame chapter-04.md \
   | grep -e Alice -e Bob
 ```
+---
+</details>
 
 * Ok, mystery solved: so it was a change made by Alice. Bob agrees with the
 modification, so he just needs to update the wrong word
