@@ -22,7 +22,7 @@ cd alice/book
 
 ```bash
 cat << EOF > chapter-01.md
-## Tim and the waves
+# Tim and the waves
 
 Being a young boy, Tim had always been fascinated with the ocean. He would spend hours at the beach, watching the waves crash against the shore, imagining all the creatures that lived beneath the surface. One day, he decided to go for a swim, but before he knew it, he was caught in a strong current and dragged out to sea.
 
