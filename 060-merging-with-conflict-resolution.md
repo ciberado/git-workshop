@@ -69,7 +69,7 @@ git commit -m "Replaced struggling and shore."
 ```
 
 * Avoiding merges for a long time is considered a bad practice, so Alice will integrate
-both branches. She starts checking that the current branch is not *master*:
+both branches. She starts checking that the current branch is not *main*:
 
 ```bash
 git status
