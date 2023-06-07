@@ -28,21 +28,17 @@ This text will be inserted on line number two.
 .
 w
 q
+EOF
 ```
 
 ## Exercise
 
-<details>
-<summary>
-(don't click on the left unless you want to unveil the answer to the exercise)
-
-This exercise contains the solution hidden. We are going to use this format during the training: invest some time trying to solve the proposed problem, and ask for support to your trainer if you get lock. But, in case of desperation, you can always click on the little triangle on the left to get a tip or even the whole answer.
-
-Sometimes, the exercise will include a solution with a redacted portion to help you to
-to investigate the proper syntax command.
+This exercise contains the solution hidden on it. We are going to use this format during the training: invest some time trying to solve the proposed problem, and ask for support to your trainer if you get lock. But, in case of desperation, you can always click on the Show solution button to get a tip or even the whole answer… after a few minutes of having started to think about it ;)
 
 Now that we are familiar with the format, **let's solve our first challenge**:
 
+<details>
+<summary>
 We are going to practice with the `ed` command. Start by creating a file:
 
 ```bash
