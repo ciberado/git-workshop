@@ -6,6 +6,7 @@ so she will *merge* the vocabulary branch with the main one.
 ## Concepts and commands
 
 - [x] Branch merging
+- [x] `merge`
 
 ## Lab
 

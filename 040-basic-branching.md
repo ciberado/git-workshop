@@ -5,6 +5,8 @@ Reading the chapter again, Alice understands she has to enhance the vocabulary o
 ## Concepts and commands
 
 - [x] Branches
+- [x] `branch`
+- [x] `checkout`
 
 ## Lab
 
