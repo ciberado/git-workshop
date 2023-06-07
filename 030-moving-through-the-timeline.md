@@ -7,6 +7,8 @@
 * [x] Moving the *HEAD* pointer
 * [x] Detached *HEAD* state
 * [x] `rev-parse`
+* [x] `switch`
+* [x] `checkout`
 
 ## Lab
 
