@@ -1,4 +1,4 @@
-# Alice: Basic branching
+# Alice: basic branching
 
 Reading the chapter again, Alice understands she has to enhance the vocabulary of the descriptions. But she also wants to keep developing the story, separating both tasks.
 

@@ -1,4 +1,4 @@
-# Alice: Moving through the timeline
+# Alice: moving through the timeline
 
 **Note**: this section of the course requires root access to install a tool. If it is not possible for you to get elevated privileges, just check if `delta` is already present in the system.
 
