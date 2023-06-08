@@ -1,14 +1,14 @@
-# Alice: ammending commits
+# Alice: amending commits
 
-In this laboratory, our best writer will make some changes, but simplifying
-the log before merging her working branch with `main` to avoid generating noise.
+It is easy to realize there was an error just a second after commiting some files.
+Here, Alice will correct one of such mistakes.
 
 ## Concepts and commands
 
 - [x] History clarity
 - [x] `--amend`
 
-## Lab: ammend
+## Lab: amend
 
 * She starts by reaching her working area
 
