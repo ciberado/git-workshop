@@ -47,7 +47,7 @@ git push origin main
 ```
 
 * Remote annotations usually are attached to versions of the repo that are significant
-and should be share, so Alice also decides to push `v1` into the central repo
+and should be shared, so Alice also decides to push `v1` into the central repo
 
 ```bash
 git push origin v1

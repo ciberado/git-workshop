@@ -43,10 +43,12 @@ ls
 <details>
 <summary>
 Alice has her preferred way to take a quick look at the repo history, and this looks
-like a good moment to put it in play
+like a good moment to put it in play. She uses the `pretty` option to set a particular
+format for the log messages
 
+```bash
 git log \
-  --pretty=format:"%h%x09%Cgreen%an%Creset%x09%s (%ah) %Cred%d%Creset" \
+  --pretty=██████:"%h%x09%Cgreen%an%Creset%x09%s (%ah) %Cred%d%Creset" \
   --graph
 ```
 </summary>
@@ -54,9 +56,11 @@ git log \
 ---
 #### Solution
 
+```bash
 git log \
-  --pretty=██████:"%h%x09%Cgreen%an%Creset%x09%s (%ah) %Cred%d%Creset" \
+  --pretty=format:"%h%x09%Cgreen%an%Creset%x09%s (%ah) %Cred%d%Creset" \
   --graph
+```
 ---
 </details>
 
