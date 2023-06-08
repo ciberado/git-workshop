@@ -8,7 +8,7 @@ Here, Alice will correct one of such mistakes.
 - [x] History clarity
 - [x] `--amend`
 
-## Lab: amend
+## Lab
 
 * She starts by reaching her working area
 
