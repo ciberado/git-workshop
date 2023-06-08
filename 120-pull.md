@@ -3,6 +3,7 @@
 ## Concepts and command
 
 - [x] `fetch`
+- [x] *FETCH_HEAD*
 - [x] `pull`
 
 ## Lab
@@ -72,7 +73,7 @@ git diff FETCH_HEAD
 <summary>
 Ok, looks like Alice didn't modified anything already existing and just added the new
 chapter, so Bob merges it with `main`. If he had new it, he would had used
-the `pull` command instead to combine both operations in one
+the `pull` command instead to combine both operations into one
 
 ```bash
 git merge F████_████ -m "Merged new content written by Alice"
