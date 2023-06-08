@@ -106,7 +106,7 @@ echo The lost commit is $SHA.
 Now Bob can move `HEAD`to that commit in a new branch
 
 ```bash
-git ███████ -b wip_resurrection $SHA
+git ███████ -b wip-resurrection $SHA
 ```
 </summary>
 
@@ -114,7 +114,7 @@ git ███████ -b wip_resurrection $SHA
 #### Solution
 
 ```bash
-git checkout -b wip_resurrection $SHA
+git checkout -b wip-resurrection $SHA
 ```
 ---
 </details>
@@ -131,14 +131,14 @@ git log --oneline
 
 ```bash
 git checkout main
-git merge wip_resurrection -m "Integrated chapter 4"
+git merge wip-resurrection -m "Integrated chapter 4"
 ```
 
 * Bob has learnt his lesson, and will use `git branch -d` instead of `git branch -D` for now on,
 as the lowercase version refuses to delete anything that hasn't been merged
 
 ```bash
-git branch -d wip_resurrection
+git branch -d wip-resurrection
 ```
 
 * Finally, he sends the update to the central server
