@@ -3,10 +3,6 @@
 Here we will see how Bob is able to trace who introduced a bug in the novel, in the
 form of a spelling error.
 
-## Concepts and command
-
-- [x] `blame`
-
 ## Lab: Alice
 
 * Alice worked for a lot hours today, and although she is exhausted, she also wants to

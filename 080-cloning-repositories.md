@@ -2,11 +2,6 @@
 
 Bob collaborates with Alice in writing the book. Both of them use the same old PC, as they find easier to focus in a very constrained environment. 
 
-## Commands and concepts
-
-- [x] `clone`
-- [x] `remote`
-
 ## Lab
 
 * Bob is wise enough to know he should not mess with the work of Alice, so he creates his own directory

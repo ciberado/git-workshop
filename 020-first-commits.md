@@ -3,21 +3,6 @@
 Now that Alice has a proper git repository in place, she can take advantage
 of it to start developing her novel.
 
-## Concepts and commands
-
-- [x] Working zone
-- [x] Index/staging area
-- [x] `status`
-- [x] `add`
-- [x] Changeset
-- [x] Revision
-- [x] SHA-1
-- [x] `commit`
-- [x] `log`
-- [x] HEAD, HEAD~, HEAD~~, HEAD~2
-- [x] Show specific revisions of a file
-- [x] Get the changesets applied between two revisions of a file
-
 ## Lab
 
 * Our author wants to take a look at the current state of her repo:

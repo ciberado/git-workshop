@@ -1,11 +1,5 @@
 # Bob: pulling
 
-## Concepts and command
-
-- [x] `fetch`
-- [x] *FETCH_HEAD*
-- [x] `pull`
-
 ## Lab
 
 * Bob doesn't want to write anything today, but he is interested in reading what 

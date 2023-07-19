@@ -3,10 +3,6 @@
 Bob has many nice traits, but he is not the most focused person in the world. Luckily for him,
 it is very difficult to *really* mess up things while using git.
 
-## Concepts and commands
-
-- [x] Reference log
-
 ## Lab
 
 * Bob comes back to the computer to keep working on the novel.

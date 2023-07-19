@@ -2,19 +2,11 @@
 
 **Note**: this section of the course requires root access to install a tool. If it is not possible for you to get elevated privileges, just check if `delta` is already present in the system.
 
-## Concepts and commands
-
-* [x] Moving the *HEAD* pointer
-* [x] Detached *HEAD* state
-* [x] `rev-parse`
-* [x] `switch`
-* [x] `checkout`
-
 ## Lab
 
 * Alice decides that a more fancy diff tool would provide better feedback, so she configures the [delta](https://github.com/dandavison/delta) diff tool:
 
-```bash
+```optional
 wget -P /tmp https://github.com/dandavison/delta/releases/download/0.15.1/git-delta_0.15.1_amd64.deb
 sudo dpkg -i /tmp/git-delta_0.15.1_amd64.deb
 delta --version

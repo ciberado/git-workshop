@@ -2,12 +2,6 @@
 
 Reading the chapter again, Alice understands she has to enhance the vocabulary of the descriptions. But she also wants to keep developing the story, separating both tasks.
 
-## Concepts and commands
-
-- [x] Branches
-- [x] `branch`
-- [x] `checkout`
-
 ## Lab
 
 <details>

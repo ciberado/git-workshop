@@ -3,10 +3,6 @@
 In this laboratory, our best writer will make some changes, but simplifying
 the log before merging her working branch with `main` to avoid generating noise.
 
-## Concepts and commands
-
-- [x] `rebase -i`
-
 ## Lab
 
 * Alice updated the title of the first chapter, but after taking some time for

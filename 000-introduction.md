@@ -33,12 +33,12 @@ EOF
 
 ## Exercise
 
-This exercise contains the solution hidden on it. We are going to use this format during the training: invest some time trying to solve the proposed problem, and ask for support to your trainer if you get lock. But, in case of desperation, you can always click on the Show solution button to get a tip or even the whole answer… after a few minutes of having started to think about it ;)
-
-Now that we are familiar with the format, **let's solve our first challenge**:
+This exercise contains the solution hidden on it. We are going to use this format during the training: invest some time trying to solve the proposed problem, and ask for support to your trainer if you get lock. But, in case of desperation, you can always click on the *Show solution* button to get a tip or even the whole answer... after a few minutes of having started to solve it ;)
 
 <details>
 <summary>
+Now that we are familiar with the format, **let's solve our first challenge**:
+
 We are going to practice with the `ed` command. Start by creating a file:
 
 ```bash

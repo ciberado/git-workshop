@@ -3,10 +3,6 @@
 In this chapter, Alice will show us how to properly manage more sophisticated
 merge operations.
 
-## Concepts and commands
-
-- [x] `merge`
-
 ## Lab
 
 * Alice will keep working hard in increasing the tension of the story in

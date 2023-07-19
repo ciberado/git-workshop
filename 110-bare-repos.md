@@ -2,11 +2,6 @@
 
 Alice is going to create a repository intended to have only the data, without any working directory. This way, both Alice and Bob will be able to work against a common *integration branch*. 
 
-## Concepts and commands
-
-- [x] Bare repositories
-- [x] `--bare`
-
 ## Lab
 
 * First, Alice goes to the top directory to create the folder for the new repo. By convention, a

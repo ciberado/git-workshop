@@ -1,10 +1,5 @@
 # Bob: pushing to origin
 
-## Concepts and commands
-
-- [x] Remote merging
-- [x] `push`
-
 ## Lab
 
 * Imbued with the creativity provided by a good cup of coffee, Bob writes his part of the book and commits the changes **on his own repository**
@@ -52,7 +47,7 @@ git checkout -b wip-chapter-02
 
 * Now he can safely push his content, as it will appear just as another branch in Alice's repo
 
-```
+```bash
 git status
 git push origin wip-chapter-02
 ```
@@ -60,7 +55,7 @@ git push origin wip-chapter-02
 * Everything looks fine, but let's just check it:
 
 ```bash
-git log --oneline --decorate 
+git log --oneline --decorate \
   | grep origin/wip-chapter-02 -C 9999
 ```
 

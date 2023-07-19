@@ -3,11 +3,6 @@
 It is easy to realize there was an error just a second after commiting some files.
 Here, Alice will correct one of such mistakes.
 
-## Concepts and commands
-
-- [x] History clarity
-- [x] `--amend`
-
 ## Lab
 
 * She starts by reaching her working area

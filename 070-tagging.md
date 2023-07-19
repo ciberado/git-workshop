@@ -1,11 +1,5 @@
 # Alice: tagging
 
-## Concepts and commands
-
-- [x] `tag`
-- [x] Lightweight tags
-- [x] Annotated tags
-
 ## Lab
 
 * Our writer decides that she doesn't need to keep enhancing the vocabulary of

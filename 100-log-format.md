@@ -2,10 +2,6 @@
 
 Our preferred writer is back, and having read Bob's message she decides to merge his work. 
 
-## Concepts and commands
-
-- [x] Log format control
-
 ## Lab
 
 * First, she jumps into her workspace
