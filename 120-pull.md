@@ -89,3 +89,9 @@ git merge FETCH_HEAD -m "Merged new content written by Alice"
 ```bash
 cd ../..
 ```
+
+## Moving files between areas
+
+This diagram was created by [@nikki.and.chris](https://twitter.com/NikkiSiopno).
+
+![Diagram showing commands to move files between areas](images/120-git-areas-by-nikki-and-chris.jpg)
