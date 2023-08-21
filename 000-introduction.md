@@ -21,7 +21,7 @@ It can be used both programmatically and with an interactive shell, but mostly w
 
 For example, this script will insert a message in the line number two of the `example.txt` file, `w`rite the updated file on disk and `q`uit from `ed`:
 
-```bash
+```ignore
 ed example.txt << EOF
 2i
 This text will be inserted on line number two.
