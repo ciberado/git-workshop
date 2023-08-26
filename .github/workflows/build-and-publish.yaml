@@ -59,7 +59,14 @@ jobs:
                 unsafe = true
           EOF
           )
+          echo $SNIPPET >> ./gitworkshop/hugo.toml
 
+      - name: Show configuration
+        run: |
+          echo ----------------------------------------------
+          cat ./gitworkshop/hugo.toml
+          echo ----------------------------------------------
+ 
       - name: Checkout content
         uses: actions/checkout@v3
         with:
