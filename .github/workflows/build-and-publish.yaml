@@ -52,20 +52,15 @@ jobs:
           echo "theme = 'ananke'" >> ./gitworkshop/hugo.toml
       - name: Setup renderer
         run: |
-          SNIPPET=$(cat << EOF          
-          [markup]
-            [markup.goldmark]
-              [markup.goldmark.renderer]
-                unsafe = true
-          EOF
-          )
-          echo $SNIPPET >> ./gitworkshop/hugo.toml
+          echo "[markup]" >> ./gitworkshop/hugo.toml
+          echo "  [markup.goldmark]" >> ./gitworkshop/hugo.toml
+          echo "    [markup.goldmark.renderer]" >> ./gitworkshop/hugo.toml
+          echo "      unsafe = true" >> ./gitworkshop/hugo.toml
 
       - name: Show configuration
         run: |
-          echo ----------------------------------------------
+          echo Current configuration: 
           cat ./gitworkshop/hugo.toml
-          echo ----------------------------------------------
  
       - name: Checkout content
         uses: actions/checkout@v3
