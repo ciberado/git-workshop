@@ -44,9 +44,9 @@ cat .git/refs/heads/main     # Whole sha-1 HEAD
 
 <details>
 <summary>
-Actually, there are several ways to get this value. What would
-be the best way to programmatically retrieve the SHA-1 of the current
-revision?
+Actually, there are several ways to get the value stored in a
+reference. What would be the best way to programmatically 
+retrieve the SHA-1 of the current revision?
 
 ```bash
 git rev-p████ HEAD
