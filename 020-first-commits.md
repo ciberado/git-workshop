@@ -164,3 +164,8 @@ git diff HEAD~ chapter-01.md
 
 * What does it mean that a set of files are *untracked*?
 * Which command would allow you to access the version of `chapter-01.md` stored **two** revisions ago? And five?
+
+
+## Diagram
+
+![Picture of a diagram explaining the current repo configuration](images/020-first-commits.jpg)
