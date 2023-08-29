@@ -72,5 +72,7 @@ git log --oneline --graph
 ---
 </details>
 
+## Diagrams
 
+![Diagram of a merge without conflict](images/050-diff-main-vocabulary.png)
 
