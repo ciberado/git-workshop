@@ -78,3 +78,7 @@ git log
 ## Questions
 
 * Why, just after creating the new branch, `main` and `vocabulary-chapter-01` had the same SHA-1 value?
+
+## Diagrams
+
+![Diagram depicting the two branches](images/040-basic-branching.png)
