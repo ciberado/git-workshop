@@ -150,3 +150,7 @@ git commit -m "Solved conflict, merged keeper and floundering."
 ```bash
 git log --graph --decorate --oneline
 ```
+
+## Diagrams
+
+![A picture of the current state of the graph](images/060-merging-with-conflict-resolution.png)
