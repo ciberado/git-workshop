@@ -74,5 +74,5 @@ git log --oneline --graph
 
 ## Diagrams
 
-![Diagram of a merge without conflict](images/050-diff-main-vocabulary.png)
+![Diagram of a merge without conflict](images/050-merging-without-conficts.png)
 
