@@ -119,3 +119,6 @@ cat .git/refs/tags/v1      # the tag ref points to a tag object, so doesn't matc
 cd ../../
 ```
 
+## Diagrams
+
+![A diagram showing the tag object](images/070-tagging.png)
