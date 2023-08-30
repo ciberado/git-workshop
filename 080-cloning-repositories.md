@@ -67,3 +67,6 @@ git config user.name Bob
 git config user.email bob@example.com
 ```
 
+## Diagrams
+
+![A diagram showing both repos](images/080-cloning-repositories.png)
