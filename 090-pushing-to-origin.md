@@ -64,3 +64,7 @@ git log --oneline --decorate \
 ```bash
 cd ../../
 ```
+
+## Diagrams
+
+![A diagram showing both repos and the new commits](images/090-pushing-to-origin.png)
