@@ -92,6 +92,6 @@ cd ../..
 
 ## Diagrams
 
-This diagram was created by [@nikki.and.chris](https://twitter.com/NikkiSiopno).
+This diagram was created by [@nikki.and.chris](https://levelupcoding.co/).
 
 ![Diagram showing commands to move files between areas](images/120-git-areas-by-nikki-and-chris.jpg)
