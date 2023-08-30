@@ -80,7 +80,7 @@ ls
 git log --oneline
 ```
 
-* Desperate, he calls Alice. And she encourage him to use a more sophisticated version
+* Desperated, he calls Alice. And she encourage him to use a more sophisticated version
 of the `log` command that will include the references that have been generated recently,
 even if they are not part of the branch history anymore
 
