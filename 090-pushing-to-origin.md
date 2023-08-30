@@ -33,7 +33,7 @@ git status             # Branch ahead of origin/main
 
 * Now he tries to update Alice's main branch with his own... but something goes wrong:
 
-```bsh
+```bash
 git push origin main  # Error
 ```
 
