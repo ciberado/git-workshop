@@ -90,7 +90,7 @@ git merge FETCH_HEAD -m "Merged new content written by Alice"
 cd ../..
 ```
 
-## Moving files between areas
+## Diagrams
 
 This diagram was created by [@nikki.and.chris](https://twitter.com/NikkiSiopno).
 
