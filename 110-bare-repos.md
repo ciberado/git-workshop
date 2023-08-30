@@ -71,3 +71,6 @@ git push origin main
 cd ../..
 ```
 
+## Diagrams
+
+![A diagram showing different repositories in a centralized strategy](images/110-bare-repos.png)
