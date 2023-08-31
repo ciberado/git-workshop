@@ -146,3 +146,7 @@ git log --oneline --graph
 ```bash
 cat chapter*.md | grep Chapter
 ```
+
+## Diagrams
+
+![Cherry pick command diagram](images/170-cherry-picking.png)
