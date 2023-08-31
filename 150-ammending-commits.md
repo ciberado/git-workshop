@@ -12,8 +12,10 @@ cd
 cd alice/book
 ```
 
-* Alice just realizes they forgot to name the different chapters. It is going
-to take some work to solve it, so she creates a new branch
+* Alice just realizes they forgot to write the name of the different chapters. It is going
+to take some work to correct it, so she creates a new branch (the project is starting to
+get some complexity, so she agrees with Bob to use `feat` as the prefix for *feature* oriented
+branches)
 
 ```bash
 git checkout -b feat_headings
