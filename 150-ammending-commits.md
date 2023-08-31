@@ -75,3 +75,9 @@ git commit --amend -m "Added chapter number (1)"
 ```bash
 git log --oneline
 ```
+
+* The old commit will remain until the [garbage collector](https://renatogentil.medium.com/hands-on-git-garbage-collections-fb9e7c1dd5fc) happens:
+
+```bash
+git reflog
+```
