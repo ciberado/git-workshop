@@ -11,7 +11,7 @@ review the state of the book. So she goes to her repo and gets the updates
 ```bash
 cd
 cd alice/book
-git pull origin master
+git pull origin main
 ```
 
 * The new chapter written by Bob looks very promising! But Alice notices a problem: John is not
